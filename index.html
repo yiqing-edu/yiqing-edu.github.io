@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>我是第13625637位承诺：拒吃野味</title> 
+<title>看看你是第几位承诺：拒吃野味</title> 
 <script>
 function copyUrl2()
         {
+			var my_timestamp = Date.parse(new Date());
             var Url2=document.getElementById("biao1").innerText;
             var oInput = document.createElement('input');
             oInput.value = Url2;
@@ -14,7 +15,7 @@ function copyUrl2()
             document.execCommand("Copy"); // 执行浏览器复制命令
             oInput.className = 'oInput';
             oInput.style.display='none';
-            alert('您是第13625637位承诺者。\n链接已经复制，快快粘贴分享给好友吧！');
+            alert('您是第'+my_timestamp/1000+'位承诺者。\n链接已经复制，快快粘贴分享给好友吧！');
         };
 </script>
 <style>
