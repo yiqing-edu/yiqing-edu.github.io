@@ -4,27 +4,18 @@
 <meta charset="utf-8">
 <title>我是第13625637位承诺：拒吃野味</title> 
 <script>
-function myFunction(){
-	alert("我是第13625637位承诺：拒吃野味！");
-};
-window._bd_share_config={
-        "common":{
-            "bdPopTitle":"您的自定义pop窗口标题",
-            "bdSnsKey":{},
-            "bdText":"此处填写自定义的分享内容", 
-            "bdMini":"2",
-            "bdMiniList":false,
-            "bdPic":"http://localhost/centlight/public/attachment/201410/24/14/5449ef39574f5_282x220.jpg", /* 此处填写要分享图片地址 */
-            "bdStyle":"0",
-            "bdSize":"16"
-            },
-        "share":{}
-};
-with(document)0[
-                (getElementsByTagName('head')[0]||body).
-                appendChild(createElement('script')).
-                src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
-];
+function copyUrl2()
+        {
+            var Url2=document.getElementById("biao1").innerText;
+            var oInput = document.createElement('input');
+            oInput.value = Url2;
+            document.body.appendChild(oInput);
+            oInput.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+            oInput.className = 'oInput';
+            oInput.style.display='none';
+            alert('您是第13625637位承诺者。\n链接已经复制，快快粘贴分享给好友吧！');
+        };
 </script>
 <style>
 .button {
@@ -43,13 +34,10 @@ with(document)0[
 </style>
 </head>
 <body bgcolor="#E52137">
-<div class="bdsharebuttonbox">
-<a href="#" class="bds_more" data-cmd="more"></a>
-<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-</div>
 <div align="center" style = "font-size:1000%;color:white">我承诺</div>
 <div align="center" style = "font-size:1000%;color:white">拒吃</div>
 <div align="center" style = "font-size:1000%;color:white">野味</div>
-<div align="center"><input align="center" class="button" type="button" onclick="myFunction()" value="参加承诺" /><div/>
+<div align="center"><input align="center" class="button" type="button" onclick="copyUrl2()" value="参加承诺" /><div/>
+<p style="display:none;" cols="20" id="biao1">拒吃野味！我是第13625637位承诺者。你也来参加吧！点击-->> https://yiqing-edu.github.io/</p>
 </body>
 </html>
