@@ -16,7 +16,7 @@ function copyUrl2()
             document.execCommand("Copy"); // 执行浏览器复制命令
             oInput.className = 'oInput';
             oInput.style.display='none';
-            alert('您是全国第'+my_timestamp/1000+'位承诺者。\n链接已经复制，粘贴即可，多一点分享多一份力！');
+            alert('您是全国第'+Math.trunc(my_timestamp/10000)+'位承诺者。\n链接已经复制，粘贴即可，多一点分享多一份力！');
         };
 </script>
 <style>
